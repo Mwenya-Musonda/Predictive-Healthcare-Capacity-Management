@@ -1,3 +1,6 @@
+
+
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
@@ -24,5 +27,5 @@ try:
         file_path = os.path.join("Dataset", f"{table}.csv")
         result.to_csv(file_path, index=False)
 except Exception as e:
-    print(str(e))
+  print(str(e))
 
